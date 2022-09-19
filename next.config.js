@@ -10,7 +10,8 @@ const nextConfig = {
   },
   reactStrictMode: false,
   images: {
-    domains: ['content-api.changenow.io']
+    domains: ['content-api.changenow.io'],
+    unoptimized: true
   }
 };
 
