@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, Dispatch, SetStateAction } from 'react';
 
 import { ARROW, CROSS } from '../../utils/svg';
 import { ICurrency } from '../../interfaces/ICurrency';
@@ -8,8 +8,8 @@ import styles from '../../styles/Dropdown.module.scss';
 
 interface IDropdownOptions {
   currency: ICurrency;
-  changeCurrency(currency: ICurrency | undefined): void;
-  amount: number;
+  changeCurrency: Dispatch<SetStateAction<ICurrency>>;
+  amount: number | '-';
   changeAmount(amount: number | '-'): void;
   isDisabled: boolean;
   currencyList: ICurrency[] | undefined;

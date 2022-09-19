@@ -1,4 +1,4 @@
-const getMinAmount = async (from, to) => {
+const getMinAmount = async (from: string, to: string) => {
   try {
     const response = await fetch(
       `${process.env.API_MIN_AMOUNT}${from}_${to}?api_key=${process.env.API_KEY}`
@@ -10,7 +10,7 @@ const getMinAmount = async (from, to) => {
 
 };
 
-const getEstimatedAmount = async (minAmount, from, to) => {
+const getEstimatedAmount = async (minAmount: number | '-', from: string, to: string) => {
   try {
     const response = await fetch(
       `${process.env.API_ESTIMATED_AMOUNT}${minAmount}/${from}_${to}/?api_key=${process.env.API_KEY}`
