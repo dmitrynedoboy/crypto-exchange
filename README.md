@@ -1,10 +1,10 @@
 ## Crypto Exchange
 
 ### Exchange fast and easy
+![Screenshot](https://user-images.githubusercontent.com/95414701/191026741-72e14243-516c-4d4b-84c3-be6d13a46809.png)
 
 ## Getting Started
 
-![Screenshot](https://user-images.githubusercontent.com/95414701/191026741-72e14243-516c-4d4b-84c3-be6d13a46809.png)
 ```
 npm i
 npm run dev
