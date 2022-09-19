@@ -1,0 +1,33 @@
+@import './normalize.css';
+
+:root {
+  --brand-color: #11b3fe;
+  --brand-color-dark: #0095e0;
+  --gray: #e3ebef;
+  --dark-gray: #eaf1f7;
+  --light-gray: #f6f7f8;
+  --text-gray: #80a2b6;
+  --background: #e5e5e5;
+  --white: #fff;
+  --black: #282828;
+  --error: #e03f3f;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+input {
+  &:focus {
+    outline-color: var(--brand-color-dark);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
